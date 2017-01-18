@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/designerdetail/designerdetail",
+    "pages/detail/detail",
+    "pages/designer/designer"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "因人而艺",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#0f0",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "selectedIconPath": "img/iconh.png",
+      "iconPath": "img/icon.png"
+    }, {
+      "pagePath": "pages/designer/designer",
+      "text": "设计师",
+      "selectedIconPath": "img/cyiconh.png",
+      "iconPath": "img/cyicon.png"
+    },
+    {
+      "pagePath": "pages/detail/detail",
+      "text": "创意",
+      "selectedIconPath": "img/iconh.png",
+      "iconPath": "img/icon.png"
+    }]
+  }
+}

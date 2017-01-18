@@ -1,0 +1,33 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.bannercon{
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-desc{
+  font-family: '微软雅黑';
+  color: #000;
+}
+.page3{
+  margin-top: -100px;
+}
+.strat-project-btn{
+  width: 80%;
+}

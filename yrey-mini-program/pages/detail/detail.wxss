@@ -1,0 +1,50 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+
+.textStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer {
+  margin-top: 20px;
+}
+.flex-item {
+  width: 200rpx;
+  height: 200rpx;
+  background: red;
+  border: 1rpx solid #ccc;
+}
+.bc_green{
+  background: green;
+}
+.scroll-view-item,.scroll-view-item_H{
+  width: 200rpx;
+  height: 200rpx;
+}
+.bc_red{
+  background: red;
+}
+.bc_yellow{
+  background: yellow;
+}
+/** wxss **/
+/** 修改button默认的点击态样式类**/
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+.other-navigator-hover {
+    color:red;
+}

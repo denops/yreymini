@@ -1,0 +1,40 @@
+<!--logs.wxml-->
+<!--首页轮播图-->
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="log-list">
+
+<!--设计师列表模板 begin-->
+<template name="itmes">
+     <navigator url="../designerdetail/designerdetail?id={{odesignerId}}" hover-class="navigator-hover">
+  <view class="desiitem" hover-class="hitem">
+     <view class="itemcon">
+      <image src="{{avatarUrl}}" class="headimg" background-size="cover" model="scaleToFill"></image> 
+      <view class="con">
+       <view class="dname">{{designerName}}</view>
+      <view class="city">{{adeptType}}</view>
+      <view class="citys">{{districtName}}</view>
+      </view>
+       
+     </view>
+      
+  </view>
+    </navigator>
+</template>
+<!--文章列表模板 end-->
+
+<!--循环输出列表 begin-->
+<view wx:for="{{newsList}}" class="list">
+   <view wx:for="{{item.designers}}">
+    <template is="itmes" data="{{...item}}"/>
+   </view>
+  
+</view>
+<!--循环输出列表 end-->
+</view>
