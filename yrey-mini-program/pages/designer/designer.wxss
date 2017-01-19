@@ -41,3 +41,4 @@ swiper {
 }
 .dname{height: 35px;font-weight: bold;}
 .headimg{float: left;}
+.citys{float:right}
