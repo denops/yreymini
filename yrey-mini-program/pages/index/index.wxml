@@ -8,7 +8,7 @@
   <button class="strat-project-btn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
         disabled="{{disabled}}" bindtap="primary">立即启动项目</button>
    
-  <!--测试头像及姓名-->
+  <!--测试头像及姓名,test next-->
   <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
