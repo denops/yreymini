@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "攻略详情",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

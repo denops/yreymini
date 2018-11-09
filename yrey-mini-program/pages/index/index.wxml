@@ -1,17 +1,49 @@
-<!--index.wxml-->
-
+<!--51旅行攻略-->
 <view class="container">
-   <!--banner-image-->
-   <view class="bannercon" wx:for="{{imgList}}" wx:for-index="idx" wx:for-item="itemName">
-     <image class="page{{idx+1}}" src="{{itemName}}" mode="widthFix" />
-   </view>
-  <button class="strat-project-btn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
-        disabled="{{disabled}}" bindtap="primary">立即启动项目</button>
-   
-  <!--测试头像及姓名,test next-->
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <!-- 首页轮播图 -->
+  <view class="page-section page-section-spacing swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+      interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+      <block wx:for="{{backgrounds}}" wx:key="*this">
+        <navigator url="/pages/designerdetail/designerdetail?title=navigate" hover-class="navigator-hover">
+          <swiper-item>
+            <image class="swiper-item" src='{{item.url}}'></image>
+            <text class='swiper-text'>{{item.text}}</text>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
   </view>
- 
+  <!-- 文章攻略列表 -->
+    <view class="list">
+      <block wx:key="id" wx:for="{{postsList}}">
+        <view class="list-item" index="{{index}}" id="{{item.id}}" bindtap="redictDetail">
+          <view class="content">
+            <image src="{{item.url}}" mode="aspectFill" class="cover"></image>
+            <view class="title">
+              <text>{{item.title}}</text>
+            </view>
+            <view class="information">
+              <view class="meta">
+                <image src="../../img/category-o.png"></image>
+                <text>{{item.category}}</text>
+              </view>
+              <view class="meta">
+                <image src="../../img/views-o.png"></image>
+                <text>{{item.views}}</text>
+              </view>
+              <view class="meta">
+                <image src="../../img/comments-o.png"></image>
+                <text>{{item.comments}}</text>
+              </view>
+              <view class="meta">
+                <image src="../../img/heart-o.png"></image>
+                <text>{{item.thumbses}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>  
+  
 </view>

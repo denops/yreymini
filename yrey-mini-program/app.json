@@ -3,20 +3,22 @@
     "pages/index/index",
     "pages/designerdetail/designerdetail",
     "pages/detail/detail",
-    "pages/designer/designer"
+    "pages/designer/designer",
+    "pages/person/person"
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "因人而艺",
-    "navigationBarTextStyle":"black",
+    "backgroundColor": "#33993b",
+    "navigationBarBackgroundColor": "#33993b",
+    "navigationBarTitleText": "51旅行",
+    "navigationBarTextStyle":"white",
     "enablePullDownRefresh": true
   },
   "tabBar": {
-    "selectedColor": "#0f0",
+    "selectedColor": "#000",
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页",
+      "text": "攻略",
       "selectedIconPath": "img/iconh.png",
       "iconPath": "img/icon.png"
     }, {
@@ -26,10 +28,11 @@
       "iconPath": "img/cyicon.png"
     },
     {
-      "pagePath": "pages/detail/detail",
-      "text": "创意",
-      "selectedIconPath": "img/iconh.png",
-      "iconPath": "img/icon.png"
-    }]
+      "pagePath": "pages/person/person",
+      "iconPath": "img/person.png",
+      "selectedIconPath": "img/person-o.png",
+      "text": "我"
+    }
+    ]
   }
 }

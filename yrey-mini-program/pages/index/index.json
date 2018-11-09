@@ -1,1 +1,7 @@
-{}
+{
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#33993b",
+  "navigationBarBackgroundColor": "#33993b",
+  "navigationBarTitleText": "51旅行攻略",
+  "navigationBarTextStyle": "white"
+}
